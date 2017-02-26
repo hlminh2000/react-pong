@@ -21,9 +21,14 @@ A live version of this is hosted at: https://react-pong.herokuapp.com/
 	- State manipulation through actions
 	- Built-in replay interface in store manager - currently only handles linear-time replay through frame state restoration
 
+### Current Technical Limitations
+- Components are accessing store directly, hence they are currently non-reusable
+- linear-time replay doesn't support non keyframe-driven applications
+
 ### What's coming next
 - Slo-mo replay
 - Action-driven replay system (real-time replay support for non keyframe-driven applications)
+- Component container layer to support reusable visual components
 
 ### What will come one day
 - Multi-player through web socket
