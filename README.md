@@ -1,14 +1,16 @@
-# H1
+# React-Pong
 <!-- ## H2
 ### H3
 #### H4
 ##### H5
 ###### H6 -->
 
-Alternatively, for H1 and H2, an underline-ish style:
+A pong game built with React and my little experimental implementation of Flux.
 
-Alt-H1
-======
+A live version of this is hosted at: https://react-pong.herokuapp.com/
 
-Alt-H2
-------
+<!-- Alt-H1 -->
+<!-- ====== -->
+
+<!-- Alt-H2 -->
+<!-- ------ -->
