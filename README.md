@@ -6,6 +6,7 @@
 ###### H6 -->
 
 A pong game built with React and my little experimental implementation of Flux.
+The project is an effort for me to really understand the Flux architecture by implementing it myself.
 
 A live version of this is hosted at: https://react-pong.herokuapp.com/
 
