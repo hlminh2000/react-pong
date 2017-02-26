@@ -17,7 +17,7 @@ A live version of this is hosted at: https://react-pong.herokuapp.com/
 - Built with React
 - A simple experimental implementation of Flux
 	- Immutable state (although the store can be cleared)
-	- Singleton store manager with a store provider component
+	- Singleton store manager with a store provider component to enforce single store architecture
 	- State manipulation through actions
 	- Built-in replay interface in store manager - currently only handles linear-time replay through frame state restoration
 
