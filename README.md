@@ -28,7 +28,9 @@ A live version of this is hosted at: https://react-pong.herokuapp.com/
 ### What's coming next
 - Slo-mo replay
 - Action-driven replay system (real-time replay support for non keyframe-driven applications)
-- Component container layer to support reusable visual components
+- Better component modularity support
+	- Component container layer to support reusable visual components
+	- Limiting store access for components to reading latest state and perform actions
 
 ### What will come one day
 - Multi-player through web socket
