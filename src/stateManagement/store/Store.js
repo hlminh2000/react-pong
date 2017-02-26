@@ -3,7 +3,7 @@
 var Store = (()=>{
 	var instance;
 	var store = [];
-	var registredActions = [];
+	var registredReducers = [];
 	var playbackInterval;
 	const createInstance = () => {
 		instance = {
@@ -13,14 +13,14 @@ var Store = (()=>{
 				store.push(newState);
 			},
 			clear     : ()  =>  { store=[] },
-			registerAction : (action) => {
-				registredActions.push({
-					type: action.type,
-					callback: action.callback,
+			registerReducer : (reducer) => {
+				registredReducers.push({
+					type: reducer.type,
+					callback: reducer.callback,
 				});
 			},
 			performAction : (actionData) => {
-				registredActions.filter(action => action.type === actionData.type)[0].callback(actionData.data);
+				registredReducers.filter(action => action.type === actionData.type)[0].callback(actionData.data);
 			},
 			startPlayback	:	(renderCallback, refreshRate)	=>	{
 				return new Promise((resolve, reject) => {

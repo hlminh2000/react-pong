@@ -3,7 +3,7 @@ import InitialState from '../InitialState.js';
 
 const store = Store.getInstance();
 
-const Actions = [
+const Reducers = [
 	{
 		type      : 'USER_MOVE',
 		callback  : (data) => {
@@ -76,4 +76,4 @@ const Actions = [
 	}
 ]
 
-export default Actions;
+export default Reducers;

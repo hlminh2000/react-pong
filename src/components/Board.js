@@ -14,17 +14,16 @@ class Board extends Component {
 	 const widthNum = Number(this.props.width.split('px')[0]);
 	 const heightNum = Number(this.props.height.split('px')[0]);
 
-	 const ballX = widthNum*this.props.appModel.ballPos.x + 'px';
-	 const ballY = heightNum*this.props.appModel.ballPos.y + 'px';
+	 const ballX = widthNum*this.store.latest().ballPos.x + 'px';
+	 const ballY = heightNum*this.store.latest().ballPos.y + 'px';
 
 	 return (
 		<div style={style}>
 		  <Paddle
 			 isTop={true}
 			 isPlayer='false'
-			 width={this.props.appModel.paddleTopModel.width}
-			 appModel={this.props.appModel}
-			 position={this.props.appModel.paddleTopModel.position}>
+			 width={this.store.latest().paddleTopModel.width}
+			 position={this.store.latest().paddleTopModel.position}>
 		  </Paddle>
 
 		  <Ball
@@ -35,9 +34,8 @@ class Board extends Component {
 		  <Paddle
 			 isTop={false}
 			 isPlayer='true'
-			 width={this.props.appModel.paddleBottomModel.width}
-			 appModel={this.props.appModel}
-			 position={this.props.appModel.paddleBottomModel.position}>
+			 width={this.store.latest().paddleBottomModel.width}
+			 position={this.store.latest().paddleBottomModel.position}>
 		  </Paddle>
 		</div>
 	 );

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import logo       from './logo.svg';
 // import Store      from '../stateManagement/store/Store.js';
-import Actions    from './actions/Actions.js';
-import Board      from './components/Board.js';
+import Reducers    from './reducers/Reducers.js';
+import Board      from '../components/Board.js';
 import './App.css';
 
 
@@ -20,7 +20,7 @@ class App extends Component {
 	 }
 	 this.onReplayClick = this.onReplayClick.bind(this);
 	 this.onRestartClick = this.onRestartClick.bind(this);
-    Actions.forEach(action => this.store.registerAction(action));
+    Reducers.forEach(reducer => this.store.registerReducer(reducer));
   }
 
   componentWillMount(){
